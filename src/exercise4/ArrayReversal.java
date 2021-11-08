@@ -6,28 +6,14 @@ public class ArrayReversal {
 
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-
-    System.out.print("Enter size: ");
-    int size = input.nextInt();
-
-    char[] symbols = new char[size];
-
-    System.out.println("Enter numbers: ");
-    for (int index = 0; index < symbols.length; index++) {
-        symbols[index] = input.next().charAt(0);
-    }
-
-    System.out.print("Reversed symbols: [");
-
-    for (int index = symbols.length - 1; index >= 0; index --) {
-      System.out.print(symbols[index]);
-      if (index != 0) {
-        System.out.print(", ");
-      }
-    }
-
-    System.out.println("]");
-
-  
+    char a[] = new char[5];
+    a[0] = 'F';
+    a[1] = 'D';
+    a[2] = 'I';
+    a[3] = 'B';
+    a[4] = 'A';
+    for (int i = 0; i < a.length; i++) {
+        System.out.println(a[i]);
+      }   
   }
 }
